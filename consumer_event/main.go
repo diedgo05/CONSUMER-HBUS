@@ -89,10 +89,4 @@ func Fetch(bus models.Buses) {
 		log.Fatalf("Error al decodificar la respuesta de la API: %v", err)
 	}
 
-	// respuesta hace::
-	if result.Status == "aceptada" {
-		log.Println("Inscripción aceptada")
-	} else {
-		log.Println("Inscripción rechazada")
-	}
 }
